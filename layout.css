@@ -1,18 +1,24 @@
-ul{
-    list-style-type: bullets;
-    margin: 0;
-    padding: 8px 16px;
-    body {
-        background-color: white;
-      }
-      
-      h1 {
-        color: black;
-        text-align: center;
-      }
-      
-      p {
-        font-family: verdana;
-        font-size: 20px;
-      }
+ul {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* change the link color to #111 (black) on hover */
+li a: hover {
+  background-color: #111;
 }
