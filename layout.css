@@ -22,3 +22,9 @@ li a {
 li a:hover {
   background-color: blue;
 }
+
+h1 {
+  color: black;
+  text-align: left;
+  font-size: 40px;
+}
