@@ -20,7 +20,7 @@ li a {
 
 /* change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: blue;
+  background-color: white;
 }
 
 h1 {
