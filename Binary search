@@ -1,0 +1,45 @@
+function main() {
+    var aantal;
+
+    window.alert("Hoeveel getallen gaan er in de rij staan?");
+    aantal = Number(window.prompt('Enter a value for aantal'));
+
+    // Hier boven wordt de variabele aangemaakt voor het aantal getallen in de rij, dat wordt daarna gevraagd hoeveel getallen dat worden en dat wordt dan in een array gezet.
+    var nummers = createArray(aantal);
+    var teller;
+
+    // Hieronder wordt een FOR-loop gebruikt om de computer de getallen aan te laten maken
+    for (teller = 0; teller <= nummers.length - 1; teller++) {
+        nummers[teller] = Math.floor(Math.random() * 100);
+    }
+    weergaveArray(nummers);
+    sorteer(nummers);
+}
+
+function sorteer(nummers) {
+    // Eerst worden de variabele aangemaakt dat ervoor zorgen dat de gegeven getallen door de computer op de goede volgorde komen te staan doorn telkens alle getallen aftegaan en te kijken welk getal kleiner is en die voor het grotere getal te leggen
+    var x;
+    var y;
+    var temp;
+
+    for (x = 0; x <= nummers.length - 1; x++) {
+        for (y = 0; y <= nummers.length - x - 2; y++) {
+            if (nummers[y] > nummers[y + 1]) {
+                temp = nummers[y];
+                nummers[y] = nummers[y + 1];
+                nummers[y + 1] = temp;
+            }
+        }
+    }
+    window.alert("De goede volgorde is");
+    weergaveArray(nummers);
+}
+
+function weergaveArray(nummers) {
+    // Eerst wordt de variabele aangemaakt waarmee alle getallen worden weergegeven die door de computer zijn aangemaakt
+    var teller;
+
+    for (teller = 0; teller <= nummers.length - 1; teller++) {
+        window.alert(nummers[teller]);
+    }
+}
