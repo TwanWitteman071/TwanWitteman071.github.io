@@ -1,0 +1,24 @@
+function main() {
+    var i;
+    var getal;
+
+    i = Math.floor(Math.random() * 30);
+    var aantal;
+
+    window.alert("Voer een getal in tussen de 0 en 30.");
+    getal = Number(window.prompt('Enter a value for getal'));
+    aantal = 1;
+    window.alert("Je hebt zoveel keer geraden: " + aantal);
+    while (getal != i) {
+        if (getal > i) {
+            window.alert("Het geraden getal is helaas niet goed, je hebt te hoog geraden.");
+        } else {
+            window.alert("Het geranden getal is niet goed, je hebt te laag geraden.");
+        }
+        window.alert("Probeer het getal opnieuw te raden.");
+        getal = Number(window.prompt('Enter a value for getal'));
+        aantal = aantal + 1;
+        window.alert("Je hebt zoveel keer geraden: " + aantal);
+    }
+    window.alert("Goed geraden het getal was inderdaad " + i);
+}
