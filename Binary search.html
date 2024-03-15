@@ -24,11 +24,17 @@
     i = Math.floor(Math.random() * 30);
     var aantal;
 
+    // Hier boven zij alle variabelen die gemaakt zijn die worden gebruikt in deze binary search, ook zit er een assign in om het random getal aan te maken.
     window.alert("Voer een getal in tussen de 0 en 30.");
     getal = Number(window.prompt('Enter a value for getal'));
     aantal = 1;
     window.alert("Je hebt zoveel keer geraden: " + aantal);
+
+    // Hier boven wordt als eerst gevraagd om voor de eerste keer een getal tussen de 0 en de 30 te raden dat wordt dan in de variabele getal gezet een dan komt er een assign dat laat zien hoevaak er is geraden en dat staat in de variabele aantal.
+    // Dan wordt er gezegd hoevaak er is geraden.
     while (getal != i) {
+
+        // In de tekst van de WHILE-loop heb ik de de != gezet om te zeggen van dat wanneer getal wel i is dan gaat het verder, maar als het getal nog niet i is dan gaat hij de loop door en wordt er eerst nagelezen welk getal is ingevuld en dan gaat het programma door de IF-statement en als getal > 1 dan gaat het de true kant op en wordt er gezegt dat er te hoog is geraden. Als getal < i dan gaat het programma via de linkerkant van de IF-statement en dan wordt er gezegt dat er te laag is geraden ook vraagt het programma om opnieuw te raden en wordt er bijgehouden weer hoeveek er is geraden.
         if (getal > i) {
             window.alert("Het geraden getal is helaas niet goed, je hebt te hoog geraden.");
         } else {
@@ -39,8 +45,11 @@
         aantal = aantal + 1;
         window.alert("Je hebt zoveel keer geraden: " + aantal);
     }
+
+    // Als het getal eenmaal is geraden dan is getal = i en dan is het programma klaar.
     window.alert("Goed geraden het getal was inderdaad " + i);
 //}
+
 </script>
 </body>
 </html>
