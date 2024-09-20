@@ -6,6 +6,21 @@ ul {
   background-color: rgba(255, 0, 0, 0.83);
 }
 
+.dropbtn {
+  background-color:rgba(255, 0, 0, 0.83);
+  color: black;
+  padding: 0px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+
 li {
   float: left;
 }
