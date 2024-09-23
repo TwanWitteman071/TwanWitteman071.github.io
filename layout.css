@@ -5,10 +5,9 @@ ul {
   overflow: hidden;
   background-color: rgba(255, 0, 0, 0.83);
 }
-<style>
-/* Style The Dropdown Button */
+
 .dropbtn {
-  background-color: #ff0000;
+  background-color: #4CAF50;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -16,13 +15,11 @@ ul {
   cursor: pointer;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -32,7 +29,6 @@ ul {
   z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -40,32 +36,15 @@ ul {
   display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #f1f1f1}
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: #ff0000;
+  background-color: #3e8e41;
 }
-</style>
-
-<div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-  <a href="index.html">Home</a></li>
-  <a href="binairstelsel.html">Binairstelsel</a></li>
-  <a href="kleurmodellen.html">Kleurmodellen</a></li>
-  <a href="compressie.html">Compressie</a></li>
-  <a href="bitmap.html">Bitmap</a></li>
-  <a href="Computer.html">Computers</a></li>
-  <a href="Binary search.html">Binary search</a></li>
-  </div>
-</div>
 
 .dropdown-content {
   right: 0;
