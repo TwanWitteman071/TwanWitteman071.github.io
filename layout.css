@@ -8,7 +8,7 @@ ul {
 <style>
 /* Style The Dropdown Button */
 .dropbtn {
-  background-color: #4CAF50;
+  background-color: #ff0000;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -50,7 +50,7 @@ ul {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  background-color: #ff0000;
 }
 </style>
 
