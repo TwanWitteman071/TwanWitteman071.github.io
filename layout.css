@@ -57,11 +57,19 @@ ul {
 <div class="dropdown">
   <button class="dropbtn">Dropdown</button>
   <div class="dropdown-content">
-  <a href="">Link 1</a>
-  <a href="#">Link 2</a>
-  <a href="#">Link 3</a>
+  <a href="index.html">Home</a></li>
+  <a href="binairstelsel.html">Binairstelsel</a></li>
+  <a href="kleurmodellen.html">Kleurmodellen</a></li>
+  <a href="compressie.html">Compressie</a></li>
+  <a href="bitmap.html">Bitmap</a></li>
+  <a href="Computer.html">Computers</a></li>
+  <a href="Binary search.html">Binary search</a></li>
   </div>
 </div>
+
+.dropdown-content {
+  right: 0;
+}
 
 li {
   float: left;
