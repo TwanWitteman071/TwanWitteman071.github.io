@@ -1,10 +1,4 @@
-ul {
-  list-style-type: none;
-  margin:0;
-  padding:0;
-  overflow: hidden;
-  background-color: rgba(255, 0, 0, 0.83);
-}
+
 
 .dropbtn {
   background-color: #b71f1f;
